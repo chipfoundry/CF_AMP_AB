@@ -1,0 +1,499 @@
+VERSION 5.8 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+PROPERTYDEFINITIONS
+  MACRO SDLpower STRING ;
+  MACRO SDLground STRING ;
+  MACRO SDLglobal STRING ;
+END PROPERTYDEFINITIONS
+
+MACRO CF_AMP_AB_core
+  ORIGIN 0 0 ;
+  FOREIGN CF_AMP_AB_core 0 0 ;
+  SIZE 343.555 BY 258.76 ;
+  PIN vpwrlv
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 176.97 256.02 178.47 258.76 ;
+    END
+  END vpwrlv
+  PIN vpblv
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 179.265 255.825 180.395 258.76 ;
+    END
+  END vpblv
+  PIN vpb
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 80.315 0 80.635 0.505 ;
+    END
+  END vpb
+  PIN vgnd
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0 0 101.115 2.065 ;
+    END
+  END vgnd
+  PIN vpwr
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 181.75 257.955 342.825 258.76 ;
+    END
+  END vpwr
+  PIN vneg
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 130.48 0 136.175 2.385 ;
+    END
+  END vneg
+  PIN vout
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 255.26 0 257.5 2.515 ;
+    END
+  END vout
+  PIN phi_1b
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 79.415 0 79.675 1.055 ;
+    END
+  END phi_1b
+  PIN phi_1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 78.955 0 79.215 1.045 ;
+    END
+  END phi_1
+  PIN pd
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 342.755 237.29 343.555 237.55 ;
+    END
+  END pd
+  PIN mode[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 250.83 0 251.06 1.02 ;
+    END
+  END mode[1]
+  PIN mode[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 251.26 0 251.49 1.01 ;
+    END
+  END mode[0]
+  PIN iref2
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 192.795 0.95 193.44 ;
+    END
+  END iref2
+  PIN iref1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 187.365 1.01 188.005 ;
+    END
+  END iref1
+  PIN in_sel
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 173.685 0 173.945 0.89 ;
+    END
+  END in_sel
+  PIN enable_hv
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 341.735 236.83 343.555 237.09 ;
+    END
+  END enable_hv
+  PIN Vinp
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 81.715 0 81.975 0.605 ;
+    END
+  END Vinp
+  PIN Vinn
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 82.635 0 82.895 0.645 ;
+    END
+  END Vinn
+  PIN iptat_Ibg_eq
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 175.19 258.375 175.39 258.76 ;
+    END
+  END iptat_Ibg_eq
+  PIN iptat
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 225.48 0.525 225.655 ;
+    END
+  END iptat
+  PIN iptat_prc[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 217.145 1.16 217.32 ;
+    END
+  END iptat_prc[2]
+  PIN iptat_prc[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 215.455 1.16 215.595 ;
+    END
+  END iptat_prc[0]
+  PIN iptat_prc[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 216.665 1.16 216.805 ;
+    END
+  END iptat_prc[1]
+  PIN iptat_prc[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 216.085 1.16 216.225 ;
+    END
+  END iptat_prc[3]
+  PIN iptat_prc[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 215.035 1.16 215.175 ;
+    END
+  END iptat_prc[4]
+  PIN ibg_trim[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 227.28 1.495 227.44 ;
+    END
+  END ibg_trim[6]
+  PIN iptat_trim[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 231.37 1.305 231.57 ;
+    END
+  END iptat_trim[0]
+  PIN iptat_trim[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 231.77 1.305 231.97 ;
+    END
+  END iptat_trim[1]
+  PIN iptat_trim[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 232.17 1.31 232.37 ;
+    END
+  END iptat_trim[2]
+  PIN iptat_trim[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 232.57 1.305 232.77 ;
+    END
+  END iptat_trim[3]
+  PIN iptat_trim[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 230.57 1.305 230.77 ;
+    END
+  END iptat_trim[4]
+  PIN ibg_trim[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 230.97 1.5 231.17 ;
+    END
+  END ibg_trim[0]
+  PIN ibg_trim[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 229.63 1.23 229.79 ;
+    END
+  END ibg_trim[1]
+  PIN ibg_trim[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 229.085 1.49 229.245 ;
+    END
+  END ibg_trim[2]
+  PIN ibg_trim[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 228.635 1.495 228.795 ;
+    END
+  END ibg_trim[3]
+  PIN ibg_trim[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 228.17 1.495 228.33 ;
+    END
+  END ibg_trim[4]
+  PIN ibg_trim[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 227.69 1.495 227.85 ;
+    END
+  END ibg_trim[5]
+  PIN vnb
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 80.785 0 81.105 0.505 ;
+    END
+  END vnb
+  PIN en_b
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 185.005 0 185.205 0.84 ;
+    END
+  END en_b
+  OBS
+    LAYER met5 ;
+      RECT 260.545 1.31 342.125 235.88 ;
+    LAYER met4 ;
+      RECT 260.545 1.31 342.125 235.88 ;
+    LAYER met3 ;
+      RECT 260.545 1.31 342.125 235.88 ;
+    LAYER li1 ;
+      RECT 0 0 343.555 258.76 ;
+    LAYER met1 ;
+      RECT 0 0 78.955 258.76 ;
+      RECT 78.955 1.045 79.215 258.76 ;
+      RECT 79.215 0 79.415 258.76 ;
+      RECT 79.415 1.055 79.675 258.76 ;
+      RECT 79.675 0 80.315 258.76 ;
+      RECT 80.315 0.505 80.635 258.76 ;
+      RECT 80.635 0 80.785 258.76 ;
+      RECT 80.785 0.505 81.105 258.76 ;
+      RECT 81.105 0 81.715 258.76 ;
+      RECT 81.715 0.605 81.975 258.76 ;
+      RECT 81.975 0 82.635 258.76 ;
+      RECT 82.635 0.645 82.895 258.76 ;
+      RECT 82.895 0 173.685 258.76 ;
+      RECT 173.685 0.89 173.945 258.76 ;
+      RECT 173.945 0 185.005 258.76 ;
+      RECT 185.005 0.84 185.205 258.76 ;
+      RECT 185.205 0 250.83 258.76 ;
+      RECT 250.83 1.02 251.06 258.76 ;
+      RECT 251.06 0 251.26 258.76 ;
+      RECT 251.26 1.01 251.49 258.76 ;
+      RECT 251.49 0 343.555 258.76 ;
+    LAYER met2 ;
+      RECT 0 0 0.525 187.365 ;
+      RECT 0 188.005 0.525 192.795 ;
+      RECT 0 193.44 0.525 215.035 ;
+      RECT 0 215.175 0.525 215.455 ;
+      RECT 0 215.595 0.525 216.085 ;
+      RECT 0 216.225 0.525 216.665 ;
+      RECT 0 216.805 0.525 217.145 ;
+      RECT 0 217.32 0.525 225.48 ;
+      RECT 0 225.655 0.525 227.28 ;
+      RECT 0 227.44 0.525 227.69 ;
+      RECT 0 227.85 0.525 228.17 ;
+      RECT 0 228.33 0.525 228.635 ;
+      RECT 0 228.795 0.525 229.085 ;
+      RECT 0 229.245 0.525 229.63 ;
+      RECT 0 229.79 0.525 230.57 ;
+      RECT 0 230.77 0.525 230.97 ;
+      RECT 0 231.17 0.525 231.37 ;
+      RECT 0 231.57 0.525 231.77 ;
+      RECT 0 231.97 0.525 232.17 ;
+      RECT 0 232.37 0.525 232.57 ;
+      RECT 0 232.77 0.525 258.76 ;
+      RECT 0.525 0 0.95 187.365 ;
+      RECT 0.525 188.005 0.95 192.795 ;
+      RECT 0.525 193.44 0.95 215.035 ;
+      RECT 0.525 215.175 0.95 215.455 ;
+      RECT 0.525 215.595 0.95 216.085 ;
+      RECT 0.525 216.225 0.95 216.665 ;
+      RECT 0.525 216.805 0.95 217.145 ;
+      RECT 0.525 217.32 0.95 227.28 ;
+      RECT 0.525 227.44 0.95 227.69 ;
+      RECT 0.525 227.85 0.95 228.17 ;
+      RECT 0.525 228.33 0.95 228.635 ;
+      RECT 0.525 228.795 0.95 229.085 ;
+      RECT 0.525 229.245 0.95 229.63 ;
+      RECT 0.525 229.79 0.95 230.57 ;
+      RECT 0.525 230.77 0.95 230.97 ;
+      RECT 0.525 231.17 0.95 231.37 ;
+      RECT 0.525 231.57 0.95 231.77 ;
+      RECT 0.525 231.97 0.95 232.17 ;
+      RECT 0.525 232.37 0.95 232.57 ;
+      RECT 0.525 232.77 0.95 258.76 ;
+      RECT 0.95 0 1.01 187.365 ;
+      RECT 0.95 188.005 1.01 215.035 ;
+      RECT 0.95 215.175 1.01 215.455 ;
+      RECT 0.95 215.595 1.01 216.085 ;
+      RECT 0.95 216.225 1.01 216.665 ;
+      RECT 0.95 216.805 1.01 217.145 ;
+      RECT 0.95 217.32 1.01 227.28 ;
+      RECT 0.95 227.44 1.01 227.69 ;
+      RECT 0.95 227.85 1.01 228.17 ;
+      RECT 0.95 228.33 1.01 228.635 ;
+      RECT 0.95 228.795 1.01 229.085 ;
+      RECT 0.95 229.245 1.01 229.63 ;
+      RECT 0.95 229.79 1.01 230.57 ;
+      RECT 0.95 230.77 1.01 230.97 ;
+      RECT 0.95 231.17 1.01 231.37 ;
+      RECT 0.95 231.57 1.01 231.77 ;
+      RECT 0.95 231.97 1.01 232.17 ;
+      RECT 0.95 232.37 1.01 232.57 ;
+      RECT 0.95 232.77 1.01 258.76 ;
+      RECT 1.01 0 1.16 215.035 ;
+      RECT 1.01 215.175 1.16 215.455 ;
+      RECT 1.01 215.595 1.16 216.085 ;
+      RECT 1.01 216.225 1.16 216.665 ;
+      RECT 1.01 216.805 1.16 217.145 ;
+      RECT 1.01 217.32 1.16 227.28 ;
+      RECT 1.01 227.44 1.16 227.69 ;
+      RECT 1.01 227.85 1.16 228.17 ;
+      RECT 1.01 228.33 1.16 228.635 ;
+      RECT 1.01 228.795 1.16 229.085 ;
+      RECT 1.01 229.245 1.16 229.63 ;
+      RECT 1.01 229.79 1.16 230.57 ;
+      RECT 1.01 230.77 1.16 230.97 ;
+      RECT 1.01 231.17 1.16 231.37 ;
+      RECT 1.01 231.57 1.16 231.77 ;
+      RECT 1.01 231.97 1.16 232.17 ;
+      RECT 1.01 232.37 1.16 232.57 ;
+      RECT 1.01 232.77 1.16 258.76 ;
+      RECT 1.16 0 1.23 227.28 ;
+      RECT 1.16 227.44 1.23 227.69 ;
+      RECT 1.16 227.85 1.23 228.17 ;
+      RECT 1.16 228.33 1.23 228.635 ;
+      RECT 1.16 228.795 1.23 229.085 ;
+      RECT 1.16 229.245 1.23 229.63 ;
+      RECT 1.16 229.79 1.23 230.57 ;
+      RECT 1.16 230.77 1.23 230.97 ;
+      RECT 1.16 231.17 1.23 231.37 ;
+      RECT 1.16 231.57 1.23 231.77 ;
+      RECT 1.16 231.97 1.23 232.17 ;
+      RECT 1.16 232.37 1.23 232.57 ;
+      RECT 1.16 232.77 1.23 258.76 ;
+      RECT 1.23 0 1.305 227.28 ;
+      RECT 1.23 227.44 1.305 227.69 ;
+      RECT 1.23 227.85 1.305 228.17 ;
+      RECT 1.23 228.33 1.305 228.635 ;
+      RECT 1.23 228.795 1.305 229.085 ;
+      RECT 1.23 229.245 1.305 230.57 ;
+      RECT 1.23 230.77 1.305 230.97 ;
+      RECT 1.23 231.17 1.305 231.37 ;
+      RECT 1.23 231.57 1.305 231.77 ;
+      RECT 1.23 231.97 1.305 232.17 ;
+      RECT 1.23 232.37 1.305 232.57 ;
+      RECT 1.23 232.77 1.305 258.76 ;
+      RECT 1.305 0 1.31 227.28 ;
+      RECT 1.305 227.44 1.31 227.69 ;
+      RECT 1.305 227.85 1.31 228.17 ;
+      RECT 1.305 228.33 1.31 228.635 ;
+      RECT 1.305 228.795 1.31 229.085 ;
+      RECT 1.305 229.245 1.31 230.97 ;
+      RECT 1.305 231.17 1.31 232.17 ;
+      RECT 1.305 232.37 1.31 258.76 ;
+      RECT 1.31 0 1.49 227.28 ;
+      RECT 1.31 227.44 1.49 227.69 ;
+      RECT 1.31 227.85 1.49 228.17 ;
+      RECT 1.31 228.33 1.49 228.635 ;
+      RECT 1.31 228.795 1.49 229.085 ;
+      RECT 1.31 229.245 1.49 230.97 ;
+      RECT 1.31 231.17 1.49 258.76 ;
+      RECT 1.49 0 1.495 227.28 ;
+      RECT 1.49 227.44 1.495 227.69 ;
+      RECT 1.49 227.85 1.495 228.17 ;
+      RECT 1.49 228.33 1.495 228.635 ;
+      RECT 1.49 228.795 1.495 230.97 ;
+      RECT 1.49 231.17 1.495 258.76 ;
+      RECT 1.495 0 1.5 230.97 ;
+      RECT 1.495 231.17 1.5 258.76 ;
+      RECT 1.5 0 175.19 258.76 ;
+      RECT 175.19 0 175.39 258.375 ;
+      RECT 175.39 0 341.735 258.76 ;
+      RECT 341.735 0 342.755 236.83 ;
+      RECT 341.735 237.09 342.755 258.76 ;
+      RECT 342.755 0 343.555 236.83 ;
+      RECT 342.755 237.09 343.555 237.29 ;
+      RECT 342.755 237.55 343.555 258.76 ;
+  END
+  PROPERTY SDLpower "vpb vpblv vpwr vpwrlv" ;
+  PROPERTY SDLground "vgnd vnb vneg" ;
+  PROPERTY SDLglobal "" ;
+END CF_AMP_AB_core
+
+END LIBRARY

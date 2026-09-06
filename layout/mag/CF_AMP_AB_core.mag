@@ -1,0 +1,126 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 0
+<< metal1 >>
+rect 16063 0 16127 101
+rect 15883 0 15935 211
+rect 15791 0 15843 209
+rect 50166 0 50212 204
+rect 50252 0 50298 202
+rect 34737 0 34789 178
+rect 16343 0 16395 121
+rect 16527 0 16579 129
+rect 16157 0 16221 101
+rect 37001 0 37041 168
+<< metal2 >>
+rect 68551 47458 68711 47510
+rect 0 38559 190 38688
+rect 0 37473 202 37601
+rect 68347 47366 68711 47418
+rect 35038 51675 35078 51752
+rect 0 45096 105 45131
+rect 0 43429 232 43464
+rect 0 43091 232 43119
+rect 0 43333 232 43361
+rect 0 43217 232 43245
+rect 0 43007 232 43035
+rect 0 45456 299 45488
+rect 0 46274 261 46314
+rect 0 46354 261 46394
+rect 0 46434 262 46474
+rect 0 46514 261 46554
+rect 0 46114 261 46154
+rect 0 46194 300 46234
+rect 0 45926 246 45958
+rect 0 45817 298 45849
+rect 0 45727 299 45759
+rect 0 45634 299 45666
+rect 0 45538 299 45570
+<< metal3 >>
+rect 35394 51204 35694 51752
+rect 35853 51165 36079 51752
+rect 0 0 20223 413
+rect 36350 51591 68565 51752
+rect 26096 0 27235 477
+rect 51052 0 51500 503
+<< labels >>
+rlabel metal3 s 35394 51204 35694 51752 1 vpwrlv
+port 1 nsew
+rlabel metal3 s 35853 51165 36079 51752 2 vpblv
+port 2 nsew
+rlabel metal1 s 16063 0 16127 101 3 vpb
+port 3 nsew
+rlabel metal3 s 0 0 20223 413 4 vgnd
+port 4 nsew
+rlabel metal3 s 36350 51591 68565 51752 5 vpwr
+port 5 nsew
+rlabel metal3 s 26096 0 27235 477 6 vneg
+port 6 nsew
+rlabel metal3 s 51052 0 51500 503 7 vout
+port 7 nsew
+rlabel metal1 s 15883 0 15935 211 8 phi_1b
+port 8 nsew
+rlabel metal1 s 15791 0 15843 209 9 phi_1
+port 9 nsew
+rlabel metal2 s 68551 47458 68711 47510 10 pd
+port 10 nsew
+rlabel metal1 s 50166 0 50212 204 11 mode[1]
+port 11 nsew
+rlabel metal1 s 50252 0 50298 202 12 mode[0]
+port 12 nsew
+rlabel metal2 s 0 38559 190 38688 13 iref2
+port 13 nsew
+rlabel metal2 s 0 37473 202 37601 14 iref1
+port 14 nsew
+rlabel metal1 s 34737 0 34789 178 15 in_sel
+port 15 nsew
+rlabel metal2 s 68347 47366 68711 47418 16 enable_hv
+port 16 nsew
+rlabel metal1 s 16343 0 16395 121 17 Vinp
+port 17 nsew
+rlabel metal1 s 16527 0 16579 129 18 Vinn
+port 18 nsew
+rlabel metal2 s 35038 51675 35078 51752 19 iptat_Ibg_eq
+port 19 nsew
+rlabel metal2 s 0 45096 105 45131 20 iptat
+port 20 nsew
+rlabel metal2 s 0 43429 232 43464 21 iptat_prc[2]
+port 21 nsew
+rlabel metal2 s 0 43091 232 43119 22 iptat_prc[0]
+port 22 nsew
+rlabel metal2 s 0 43333 232 43361 23 iptat_prc[1]
+port 23 nsew
+rlabel metal2 s 0 43217 232 43245 24 iptat_prc[3]
+port 24 nsew
+rlabel metal2 s 0 43007 232 43035 25 iptat_prc[4]
+port 25 nsew
+rlabel metal2 s 0 45456 299 45488 26 ibg_trim[6]
+port 26 nsew
+rlabel metal2 s 0 46274 261 46314 27 iptat_trim[0]
+port 27 nsew
+rlabel metal2 s 0 46354 261 46394 28 iptat_trim[1]
+port 28 nsew
+rlabel metal2 s 0 46434 262 46474 29 iptat_trim[2]
+port 29 nsew
+rlabel metal2 s 0 46514 261 46554 30 iptat_trim[3]
+port 30 nsew
+rlabel metal2 s 0 46114 261 46154 31 iptat_trim[4]
+port 31 nsew
+rlabel metal2 s 0 46194 300 46234 32 ibg_trim[0]
+port 32 nsew
+rlabel metal2 s 0 45926 246 45958 33 ibg_trim[1]
+port 33 nsew
+rlabel metal2 s 0 45817 298 45849 34 ibg_trim[2]
+port 34 nsew
+rlabel metal2 s 0 45727 299 45759 35 ibg_trim[3]
+port 35 nsew
+rlabel metal2 s 0 45634 299 45666 36 ibg_trim[4]
+port 36 nsew
+rlabel metal2 s 0 45538 299 45570 37 ibg_trim[5]
+port 37 nsew
+rlabel metal1 s 16157 0 16221 101 38 vnb
+port 38 nsew
+rlabel metal1 s 37001 0 37041 168 39 en_b
+port 39 nsew
+<< end >>

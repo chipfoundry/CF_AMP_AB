@@ -1,0 +1,24 @@
+info:
+  name: CF_AMP_AB
+  description: Class AB amplifier (CF_AMP_AB) is a ChipFoundry
+    hard-macro blackbox on SkyWater 130 nm.
+  repo: https://github.com/chipfoundry/CF_AMP_AB
+  owner: ChipFoundry
+  license: proprietary
+  author: ChipFoundry
+  email: support@chipfoundry.io
+  version: 0.2.0
+  date: 9-6-2026
+  category: analog
+  tags:
+  - CF_AMP_AB
+  bus: n/a
+  type: hard
+  maturity: Production
+  width: '373.555'
+  height: '288.76'
+  technology: sky130
+  digital_supply_voltage: n/a
+  analog_supply_voltage: n/a
+  clock_freq_mhz: n/a
+  cell_count: '2'
