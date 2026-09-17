@@ -23,14 +23,14 @@ taps `vpb` / `vnb` / `vpblv` are tied inside the wrap.
 
 ```bash
 pip install cf-ipm
-ipm install CF_AMP_AB --version 0.2.0 --include-drafts
+ipm install CF_AMP_AB --version 0.2.1 --include-drafts
 ```
 
 Until the marketplace listing is published, install from a local catalog
 override the same way `cf-sensor-afe` does:
 
 ```bash
-ipm install CF_AMP_AB --version 0.2.0 --include-drafts --local-file ip/catalog.json
+ipm install CF_AMP_AB --version 0.2.1 --include-drafts --local-file ip/catalog.json
 ```
 
 Use `hdl/gl/CF_AMP_AB.v` as the customer blackbox, `layout/lef/CF_AMP_AB.lef`
@@ -107,3 +107,10 @@ analog signal. Do not list `vpb` / `vnb` / `vpblv` on the wrapper instance.
   amplifier integration top.
 - A sensor AFE that also instantiates `CF_BUF_HIZ` / `CF_BGR` / `CF_REFBUF`
   is a follow-on.
+
+## Release History
+
+| Version | Date | Notes |
+|---|---|---|
+| 0.2.0 | 2026-09-06 | First SRAM-style PG-wrapped package. |
+| 0.2.1 | 2026-09-17 | Regenerate the pin-only core GDS abstract with drawing metal beneath every pin purpose so KLayout pin-label checks pass. |
