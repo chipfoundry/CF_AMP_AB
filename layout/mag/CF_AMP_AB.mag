@@ -17,35 +17,35 @@ rect 19527 0 19579 3129
 rect 40001 0 40041 3168
 << metal2 >>
 rect 71551 50458 74711 50510
-rect 0 41559 3190 41688
-rect 0 40473 3202 40601
+rect 0 41549 3190 41698
+rect 0 40463 3202 40611
 rect 71347 50366 74711 50418
 rect 38038 54675 38078 57752
-rect 0 48096 3105 48131
-rect 0 46429 3232 46464
-rect 0 46091 3232 46119
-rect 0 46333 3232 46361
-rect 0 46217 3232 46245
-rect 0 46007 3232 46035
-rect 0 48456 3299 48488
-rect 0 49274 3261 49314
-rect 0 49354 3261 49394
-rect 0 49434 3262 49474
-rect 0 49514 3261 49554
-rect 0 49114 3261 49154
-rect 0 49194 3300 49234
-rect 0 48926 3246 48958
-rect 0 48817 3298 48849
-rect 0 48727 3299 48759
-rect 0 48634 3299 48666
-rect 0 48538 3299 48570
+rect 0 48086 3105 48141
+rect 0 46419 3232 46474
+rect 0 46081 3232 46129
+rect 0 46323 3232 46371
+rect 0 46207 3232 46255
+rect 0 45997 3232 46045
+rect 0 48446 3299 48498
+rect 0 49264 3261 49316
+rect 0 49344 3261 49396
+rect 0 49424 3262 49476
+rect 0 49504 3261 49564
+rect 0 49104 3261 49156
+rect 0 49184 3300 49236
+rect 0 48916 3246 48968
+rect 0 48807 3298 48859
+rect 0 48717 3299 48769
+rect 0 48624 3299 48676
+rect 0 48528 3299 48580
 << metal3 >>
+rect 38496 54165 39014 54752
 rect 38394 54204 38694 54752
 rect 38853 54165 39079 54752
-rect 38496 54165 39014 54752
 rect 3000 3000 23223 3413
-rect 1452 3159 3000 3255
-rect 1452 3159 1548 55472
+rect 452 3000 23223 3413
+rect 452 3000 548 55472
 rect 246 54852 74465 55472
 rect 39350 54591 71565 54752
 rect 246 55812 74465 56432
@@ -1305,17 +1305,17 @@ rect 61000 0 61620 57752
 rect 67000 0 67620 57752
 rect 73000 0 73620 57752
 << labels >>
-rlabel metal3 s 38394 54204 38694 54752 4 vpwrlv
-port 1 nsew
-rlabel metal3 s 38853 54165 39079 54752 4 vpwrlv
-port 2 nsew
 rlabel metal3 s 38496 54165 39014 54752 4 vpwrlv
+port 1 nsew
+rlabel metal3 s 38394 54204 38694 54752 4 vpwrlv
+port 2 nsew
+rlabel metal3 s 38853 54165 39079 54752 4 vpwrlv
 port 3 nsew
 rlabel metal3 s 3000 3000 23223 3413 4 vgnd
 port 4 nsew
-rlabel metal3 s 1452 3159 3000 3255 4 vgnd
+rlabel metal3 s 452 3000 23223 3413 4 vgnd
 port 5 nsew
-rlabel metal3 s 1452 3159 1548 55472 4 vgnd
+rlabel metal3 s 452 3000 548 55472 4 vgnd
 port 6 nsew
 rlabel metal3 s 246 54852 74465 55472 4 vgnd
 port 7 nsew
@@ -1387,9 +1387,9 @@ rlabel metal1 s 53166 0 53212 3204 4 mode[1]
 port 40 nsew
 rlabel metal1 s 53252 0 53298 3202 4 mode[0]
 port 41 nsew
-rlabel metal2 s 0 41559 3190 41688 4 iref2
+rlabel metal2 s 0 41549 3190 41698 4 iref2
 port 42 nsew
-rlabel metal2 s 0 40473 3202 40601 4 iref1
+rlabel metal2 s 0 40463 3202 40611 4 iref1
 port 43 nsew
 rlabel metal1 s 37737 0 37789 3178 4 in_sel
 port 44 nsew
@@ -1401,41 +1401,41 @@ rlabel metal1 s 19527 0 19579 3129 4 Vinn
 port 47 nsew
 rlabel metal2 s 38038 54675 38078 57752 4 iptat_Ibg_eq
 port 48 nsew
-rlabel metal2 s 0 48096 3105 48131 4 iptat
+rlabel metal2 s 0 48086 3105 48141 4 iptat
 port 49 nsew
-rlabel metal2 s 0 46429 3232 46464 4 iptat_prc[2]
+rlabel metal2 s 0 46419 3232 46474 4 iptat_prc[2]
 port 50 nsew
-rlabel metal2 s 0 46091 3232 46119 4 iptat_prc[0]
+rlabel metal2 s 0 46081 3232 46129 4 iptat_prc[0]
 port 51 nsew
-rlabel metal2 s 0 46333 3232 46361 4 iptat_prc[1]
+rlabel metal2 s 0 46323 3232 46371 4 iptat_prc[1]
 port 52 nsew
-rlabel metal2 s 0 46217 3232 46245 4 iptat_prc[3]
+rlabel metal2 s 0 46207 3232 46255 4 iptat_prc[3]
 port 53 nsew
-rlabel metal2 s 0 46007 3232 46035 4 iptat_prc[4]
+rlabel metal2 s 0 45997 3232 46045 4 iptat_prc[4]
 port 54 nsew
-rlabel metal2 s 0 48456 3299 48488 4 ibg_trim[6]
+rlabel metal2 s 0 48446 3299 48498 4 ibg_trim[6]
 port 55 nsew
-rlabel metal2 s 0 49274 3261 49314 4 iptat_trim[0]
+rlabel metal2 s 0 49264 3261 49316 4 iptat_trim[0]
 port 56 nsew
-rlabel metal2 s 0 49354 3261 49394 4 iptat_trim[1]
+rlabel metal2 s 0 49344 3261 49396 4 iptat_trim[1]
 port 57 nsew
-rlabel metal2 s 0 49434 3262 49474 4 iptat_trim[2]
+rlabel metal2 s 0 49424 3262 49476 4 iptat_trim[2]
 port 58 nsew
-rlabel metal2 s 0 49514 3261 49554 4 iptat_trim[3]
+rlabel metal2 s 0 49504 3261 49564 4 iptat_trim[3]
 port 59 nsew
-rlabel metal2 s 0 49114 3261 49154 4 iptat_trim[4]
+rlabel metal2 s 0 49104 3261 49156 4 iptat_trim[4]
 port 60 nsew
-rlabel metal2 s 0 49194 3300 49234 4 ibg_trim[0]
+rlabel metal2 s 0 49184 3300 49236 4 ibg_trim[0]
 port 61 nsew
-rlabel metal2 s 0 48926 3246 48958 4 ibg_trim[1]
+rlabel metal2 s 0 48916 3246 48968 4 ibg_trim[1]
 port 62 nsew
-rlabel metal2 s 0 48817 3298 48849 4 ibg_trim[2]
+rlabel metal2 s 0 48807 3298 48859 4 ibg_trim[2]
 port 63 nsew
-rlabel metal2 s 0 48727 3299 48759 4 ibg_trim[3]
+rlabel metal2 s 0 48717 3299 48769 4 ibg_trim[3]
 port 64 nsew
-rlabel metal2 s 0 48634 3299 48666 4 ibg_trim[4]
+rlabel metal2 s 0 48624 3299 48676 4 ibg_trim[4]
 port 65 nsew
-rlabel metal2 s 0 48538 3299 48570 4 ibg_trim[5]
+rlabel metal2 s 0 48528 3299 48580 4 ibg_trim[5]
 port 66 nsew
 rlabel metal1 s 40001 0 40041 3168 4 en_b
 port 67 nsew

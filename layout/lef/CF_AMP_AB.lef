@@ -12,9 +12,9 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met3 ;
+        RECT 192.48 270.825 195.07 273.76 ;
         RECT 191.97 271.02 193.47 273.76 ;
         RECT 194.265 270.825 195.395 273.76 ;
-        RECT 192.48 270.825 195.07 273.76 ;
     END
   END vpwrlv
   PIN vgnd
@@ -23,8 +23,8 @@ MACRO CF_AMP_AB
     PORT
       LAYER met3 ;
         RECT 15 15 116.115 17.065 ;
-        RECT 7.26 15.795 15 16.275 ;
-        RECT 7.26 15.795 7.74 277.36 ;
+        RECT 2.26 15 116.115 17.065 ;
+        RECT 2.26 15 2.74 277.36 ;
         RECT 1.23 274.26 372.325 277.36 ;
       LAYER met4 ;
         RECT 20 0 23.1 288.76 ;
@@ -125,7 +125,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 207.795 15.95 208.44 ;
+        RECT 0 207.745 15.95 208.49 ;
     END
   END iref2
   PIN iref1
@@ -133,7 +133,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 202.365 16.01 203.005 ;
+        RECT 0 202.315 16.01 203.055 ;
     END
   END iref1
   PIN in_sel
@@ -181,7 +181,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 240.48 15.525 240.655 ;
+        RECT 0 240.43 15.525 240.705 ;
     END
   END iptat
   PIN iptat_prc[2]
@@ -189,7 +189,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 232.145 16.16 232.32 ;
+        RECT 0 232.095 16.16 232.37 ;
     END
   END iptat_prc[2]
   PIN iptat_prc[0]
@@ -197,7 +197,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 230.455 16.16 230.595 ;
+        RECT 0 230.405 16.16 230.645 ;
     END
   END iptat_prc[0]
   PIN iptat_prc[1]
@@ -205,7 +205,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 231.665 16.16 231.805 ;
+        RECT 0 231.615 16.16 231.855 ;
     END
   END iptat_prc[1]
   PIN iptat_prc[3]
@@ -213,7 +213,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 231.085 16.16 231.225 ;
+        RECT 0 231.035 16.16 231.275 ;
     END
   END iptat_prc[3]
   PIN iptat_prc[4]
@@ -221,7 +221,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 230.035 16.16 230.175 ;
+        RECT 0 229.985 16.16 230.225 ;
     END
   END iptat_prc[4]
   PIN ibg_trim[6]
@@ -229,7 +229,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 242.28 16.495 242.44 ;
+        RECT 0 242.23 16.495 242.49 ;
     END
   END ibg_trim[6]
   PIN iptat_trim[0]
@@ -237,7 +237,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 246.37 16.305 246.57 ;
+        RECT 0 246.32 16.305 246.58 ;
     END
   END iptat_trim[0]
   PIN iptat_trim[1]
@@ -245,7 +245,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 246.77 16.305 246.97 ;
+        RECT 0 246.72 16.305 246.98 ;
     END
   END iptat_trim[1]
   PIN iptat_trim[2]
@@ -253,7 +253,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 247.17 16.31 247.37 ;
+        RECT 0 247.12 16.31 247.38 ;
     END
   END iptat_trim[2]
   PIN iptat_trim[3]
@@ -261,7 +261,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 247.57 16.305 247.77 ;
+        RECT 0 247.52 16.305 247.82 ;
     END
   END iptat_trim[3]
   PIN iptat_trim[4]
@@ -269,7 +269,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 245.57 16.305 245.77 ;
+        RECT 0 245.52 16.305 245.78 ;
     END
   END iptat_trim[4]
   PIN ibg_trim[0]
@@ -277,7 +277,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 245.97 16.5 246.17 ;
+        RECT 0 245.92 16.5 246.18 ;
     END
   END ibg_trim[0]
   PIN ibg_trim[1]
@@ -285,7 +285,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 244.63 16.23 244.79 ;
+        RECT 0 244.58 16.23 244.84 ;
     END
   END ibg_trim[1]
   PIN ibg_trim[2]
@@ -293,7 +293,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 244.085 16.49 244.245 ;
+        RECT 0 244.035 16.49 244.295 ;
     END
   END ibg_trim[2]
   PIN ibg_trim[3]
@@ -301,7 +301,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 243.635 16.495 243.795 ;
+        RECT 0 243.585 16.495 243.845 ;
     END
   END ibg_trim[3]
   PIN ibg_trim[4]
@@ -309,7 +309,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 243.17 16.495 243.33 ;
+        RECT 0 243.12 16.495 243.38 ;
     END
   END ibg_trim[4]
   PIN ibg_trim[5]
@@ -317,7 +317,7 @@ MACRO CF_AMP_AB
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 0 242.69 16.495 242.85 ;
+        RECT 0 242.64 16.495 242.9 ;
     END
   END ibg_trim[5]
   PIN en_b
@@ -345,27 +345,27 @@ MACRO CF_AMP_AB
       RECT 266.49 0 358.555 15 ;
       RECT 15 273.76 358.555 288.76 ;
     LAYER met2 ;
-      RECT 0 0 15 202.365 ;
-      RECT 0 203.005 15 207.795 ;
-      RECT 0 208.44 15 230.035 ;
-      RECT 0 230.175 15 230.455 ;
-      RECT 0 230.595 15 231.085 ;
-      RECT 0 231.225 15 231.665 ;
-      RECT 0 231.805 15 232.145 ;
-      RECT 0 232.32 15 240.48 ;
-      RECT 0 240.655 15 242.28 ;
-      RECT 0 242.44 15 242.69 ;
-      RECT 0 242.85 15 243.17 ;
-      RECT 0 243.33 15 243.635 ;
-      RECT 0 243.795 15 244.085 ;
-      RECT 0 244.245 15 244.63 ;
-      RECT 0 244.79 15 245.57 ;
-      RECT 0 245.77 15 245.97 ;
-      RECT 0 246.17 15 246.37 ;
-      RECT 0 246.57 15 246.77 ;
-      RECT 0 246.97 15 247.17 ;
-      RECT 0 247.37 15 247.57 ;
-      RECT 0 247.77 15 288.76 ;
+      RECT 0 0 15 202.315 ;
+      RECT 0 203.055 15 207.745 ;
+      RECT 0 208.49 15 229.985 ;
+      RECT 0 230.225 15 230.405 ;
+      RECT 0 230.645 15 231.035 ;
+      RECT 0 231.275 15 231.615 ;
+      RECT 0 231.855 15 232.095 ;
+      RECT 0 232.37 15 240.43 ;
+      RECT 0 240.705 15 242.23 ;
+      RECT 0 242.49 15 242.64 ;
+      RECT 0 242.9 15 243.12 ;
+      RECT 0 243.38 15 243.585 ;
+      RECT 0 243.845 15 244.035 ;
+      RECT 0 244.295 15 244.58 ;
+      RECT 0 244.84 15 245.52 ;
+      RECT 0 245.78 15 245.92 ;
+      RECT 0 246.18 15 246.32 ;
+      RECT 0 246.58 15 246.72 ;
+      RECT 0 246.98 15 247.12 ;
+      RECT 0 247.38 15 247.52 ;
+      RECT 0 247.82 15 288.76 ;
       RECT 358.555 0 373.555 251.83 ;
       RECT 358.555 252.09 373.555 252.29 ;
       RECT 358.555 252.55 373.555 288.76 ;

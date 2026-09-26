@@ -2,7 +2,7 @@
 
 > Class AB amplifier
 
-Draft for designer review. The public GDS is an abstract; ChipFoundry
+The public GDS is an abstract; ChipFoundry
 substitutes protected full geometry at tapeout.
 
 This package ships an SRAM-style PG wrap `CF_AMP_AB` around analog leaf
@@ -23,14 +23,7 @@ taps `vpb` / `vnb` / `vpblv` are tied inside the wrap.
 
 ```bash
 pip install cf-ipm
-ipm install CF_AMP_AB --version 0.2.1 --include-drafts
-```
-
-Until the marketplace listing is published, install from a local catalog
-override the same way `cf-sensor-afe` does:
-
-```bash
-ipm install CF_AMP_AB --version 0.2.1 --include-drafts --local-file ip/catalog.json
+ipm install CF_AMP_AB --version 0.2.2
 ```
 
 Use `hdl/gl/CF_AMP_AB.v` as the customer blackbox, `layout/lef/CF_AMP_AB.lef`
@@ -38,6 +31,8 @@ for P&R, and `layout/gds/CF_AMP_AB.gds` / `layout/mag/CF_AMP_AB.mag` for the
 public wrap. `CF_AMP_AB_core` is the analog leaf (empty Verilog, pin-only
 abstract). ChipFoundry substitutes vault GDS into `CF_AMP_AB_core` at tapeout.
 P&R uses the wrap LEF (`vpwr` / `vgnd` for chip PDN, plus `vpwrlv`).
+
+Functional sim compiles `verify/beh_model/CF_AMP_AB_core.v` **instead of** the empty `hdl/gl/CF_AMP_AB_core.v` stub. See `verify/beh_model/README.md`.
 
 ## Features
 
@@ -48,6 +43,7 @@ P&R uses the wrap LEF (`vpwr` / `vgnd` for chip PDN, plus `vpwrlv`).
 - Operating mode `mode[1:0]` and input select `in_sel`
 - Current trims `ibg_trim[6:0]`, `iptat_trim[4:0]`, `iptat_prc[4:0]`, `iptat_Ibg_eq`
 - Chopper clocks `phi_1` / `phi_1b`
+- Ideal Verilog behavioral model under `verify/beh_model/` for functional sim
 - Customer cell `CF_AMP_AB` 373.555 × 288.76 µm (15 µm halo around analog leaf 343.555 × 258.76 µm)
 - Chip PDN is `vpwr` / `vgnd`. Analog LV rail `vpwrlv` is a customer signal port.
 
@@ -101,7 +97,7 @@ analog signal. Do not list `vpb` / `vnb` / `vpblv` on the wrapper instance.
 ## Limitations and Open Issues
 
 - Verilog in `hdl/gl/CF_AMP_AB.v` is a structural wrap around an empty
-  `CF_AMP_AB_core` blackbox, not a SPICE-accurate model.
+  `CF_AMP_AB_core` blackbox. Functional sim uses `verify/beh_model/CF_AMP_AB_core.v` (ideal model, not SPICE).
 - Liberty is not in this first wrap drop. P&R uses the wrap LEF.
 - Companion foundry bias cells stay foundry-only. This package ships the
   amplifier integration top.
@@ -114,3 +110,4 @@ analog signal. Do not list `vpb` / `vnb` / `vpblv` on the wrapper instance.
 |---|---|---|
 | 0.2.0 | 2026-09-06 | First SRAM-style PG-wrapped package. |
 | 0.2.1 | 2026-09-17 | Regenerate the pin-only core GDS abstract with drawing metal beneath every pin purpose so KLayout pin-label checks pass. |
+| 0.2.2 | 2026-09-26 | Core fill-exclude covers so fillgen does not overwrite the analog. Ideal behavioral model for functional sim. |
